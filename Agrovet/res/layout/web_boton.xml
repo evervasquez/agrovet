@@ -9,11 +9,12 @@
         android:id="@+id/btn_web"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:padding="5dp"
         android:layout_margin="10dp"
         android:text="@string/web"
         bootstrapbutton:bb_icon_right="fa-android"
         bootstrapbutton:bb_roundedCorners="true"
-        bootstrapbutton:bb_size="small"
-        bootstrapbutton:bb_type="primary" />
+        bootstrapbutton:bb_size="mediun"
+        bootstrapbutton:bb_type="warning" />
 
 </LinearLayout>

@@ -9,12 +9,13 @@
         android:id="@+id/btn_login"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:padding="5dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:text="@string/login"
         bootstrapbutton:bb_icon_right="fa-android"
         bootstrapbutton:bb_roundedCorners="true"
-        bootstrapbutton:bb_size="small"
-        bootstrapbutton:bb_type="success" />
+        bootstrapbutton:bb_size="mediun"
+        bootstrapbutton:bb_type="inverse" />
 
 </LinearLayout>

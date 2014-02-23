@@ -100,7 +100,6 @@ public class IndexActivity extends FragmentActivity implements
 		            args.putStringArrayList("datosPersonales",datosPersonales);
 		            baseFragment.setArguments(args);
 					break;
-
 				case CASE_PRODUCTOS:
 					baseFragment = new AlmacenFragment();
 					break;
@@ -111,7 +110,7 @@ public class IndexActivity extends FragmentActivity implements
 				default:
 					break;
 			}
-
+			
 			return baseFragment;
 		}
 	
@@ -221,7 +220,7 @@ public class IndexActivity extends FragmentActivity implements
 
 	}
 
-	public static final String[]	options	= { "Inicio", "Productos",
+	public static final String[]	options	= { "Inicio", "Insumos",
 			"Cobros"		};
 
 	@Override

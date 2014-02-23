@@ -67,7 +67,7 @@ public class IngresosFragment extends BaseFragment {
 		Log.v(TAG, "initlista");
 		tableView1.commit();
 		}else {
-			Toast.makeText(getActivity().getApplicationContext(),"No se encontraron Ingresos de Dinero", Toast.LENGTH_LONG).show();
+			Toast.makeText(getActivity().getApplicationContext(),"No se encontraron Ingresos de Dinero", Toast.LENGTH_SHORT).show();
 		}
 	}
 

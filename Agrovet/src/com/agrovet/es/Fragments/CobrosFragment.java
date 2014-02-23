@@ -212,7 +212,6 @@ public class CobrosFragment extends BaseFragment {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-
 			super.onPreExecute();
 		}
 		
@@ -261,16 +260,9 @@ public class CobrosFragment extends BaseFragment {
 		            FragmentTransaction ft = fm.beginTransaction();
 		            BaseFragment fragTwo = new ListCobrosFragments();
 		            
-		            /*Bundle bundle = new Bundle();
-		            bundle.putParcelable("movimientos", mov);
-		            
-		            fragTwo.setArguments(bundle);*/
-		            ft.add(R.id.listaFragment, fragTwo);
+		            ft.replace(R.id.listaFragment, fragTwo);
 		            ft.commit();
-		            
-				//}else {
-				//	Toast.makeText(getActivity().getApplicationContext(), "Ingrese correctamente sus datos", Toast.LENGTH_SHORT).show();
-				//}
+		         
 			} catch(JSONException e) {
 
 				e.printStackTrace();

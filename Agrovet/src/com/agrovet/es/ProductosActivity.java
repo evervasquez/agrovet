@@ -84,7 +84,7 @@ public class ProductosActivity extends Activity {
 		@Override
 		protected void onPreExecute() {
 			pd = ProgressDialog.show(context, "",
-					"Descargando productos...", true);
+					"Descargando insumos...", true);
 			String param;
 			try {
 				String _id = id_almacen+"";
@@ -120,11 +120,10 @@ public class ProductosActivity extends Activity {
 						JSONObject jsonChildNode = jsonMainNode
 								.getJSONObject(i);
 						
-						tableView1.addBasicItem(UTF8.convertirA_UTF8(jsonChildNode.optString("PPRODUCTO")),
-								"Subcategoría : " + UTF8.convertirA_UTF8(jsonChildNode.optString("SSUBCATEGORIA")), 
-								"Categoría : " + jsonChildNode.optString("CCATEGORIA"), "Stock : "
-								+ jsonChildNode.optDouble("STOCK"),
-								"Almacen : " + UTF8.convertirA_UTF8(jsonChildNode.optString("AALMACEN")));
+						tableView1.addBasicItem(jsonChildNode.optString("XINSUMO"),
+								"Almacen : " + UTF8.convertirA_UTF8(jsonChildNode.optString("AALMACEN")), 
+								"Unidad Medida : " + jsonChildNode.optString("UNIDAD_MEDIDA"), "Stock : "
+								+ jsonChildNode.optDouble("XSTOCK"));
 						
 					}
 					

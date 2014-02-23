@@ -291,15 +291,10 @@ public class AlmacenFragment extends BaseFragment {
 								.optString("DESCRIPCION"));
 						almacen.setUbicacion(jsonChildNode
 								.optString("UBICACION"));
-						almacen.setId_sucursal(jsonChildNode
-								.optInt("ID_SUCURSAL"));
-						almacen.setNombreSucursal(jsonChildNode
-								.optString("NOMBRE"));
 
 						almacenes.add(almacen);
 					}
 
-					Log.v(TAG, almacenes.get(1).getNombreSucursal());
 					initCards(almacenes);
 				}
 

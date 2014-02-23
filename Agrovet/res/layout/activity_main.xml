@@ -4,6 +4,7 @@
     xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
     xmlns:fontawesometext="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
+    android:background="#FFFFFF"
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
@@ -17,6 +18,7 @@
             android:id="@+id/imageView1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="20dp"
             android:contentDescription="@string/action_settings"
             android:paddingTop="@dimen/padding_img"
             android:src="@drawable/logo"

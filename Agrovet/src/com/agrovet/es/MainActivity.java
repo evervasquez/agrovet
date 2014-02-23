@@ -61,7 +61,7 @@ public class MainActivity extends Activity {
 		txt_pass = (EditText) findViewById(R.id.text_pass);
 		btnlogin = (BootstrapButton) findViewById(R.id.btn_login);
 		btnweb = (BootstrapButton) findViewById(R.id.btn_web);
-
+		
 		btnlogin.setOnClickListener(new OnClickListener() {
 
 			@Override

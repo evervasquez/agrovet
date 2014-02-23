@@ -77,11 +77,11 @@ public class GoogleNowBirthCard extends Card {
         
         //Add Thumbnail
         GoogleNowBirthThumb thumbnail = new GoogleNowBirthThumb(getContext());
-        if(verifica_internet.checkConex(getContext())) {
-        thumbnail.setUrlResource("https://plus.google.com/s2/photos/profile/114432517923423045208?sz=250");
-        }else {
+        //if(verifica_internet.checkConex(getContext())) {
+        //thumbnail.setUrlResource("https://plus.google.com/s2/photos/profile/114432517923423045208?sz=250");
+       // }else {
         	thumbnail.setDrawableResource(R.drawable.avatar);	
-        }
+        //}
         addCardThumbnail(thumbnail);
     }
 
@@ -104,8 +104,8 @@ public class GoogleNowBirthCard extends Card {
 
         @Override
         public void setupInnerViewElements(ViewGroup parent, View viewImage) {
-            viewImage.getLayoutParams().width = 120;
-            viewImage.getLayoutParams().height = 120;
+            viewImage.getLayoutParams().width =  viewImage.getLayoutParams().FILL_PARENT;
+            viewImage.getLayoutParams().height = 250;
         }
     }
 

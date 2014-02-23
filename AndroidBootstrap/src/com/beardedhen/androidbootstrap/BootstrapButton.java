@@ -58,7 +58,6 @@ public class BootstrapButton extends FrameLayout {
 		bbuttonTypeMapRounded.put("danger", BootstrapTypes.DANGER_ROUNDED);
 		bbuttonTypeMapRounded.put("inverse", BootstrapTypes.INVERSE_ROUNDED);
 		
-		
 		faMap = FontAwesome.getFaMap();
 		
 	}
